@@ -1,0 +1,206 @@
+I.
+1. Milyen problémákat okozhat, hogy a szekvenciális projektek végén van a tesztelés jelentõs része?
+
+A már elkészült programok hibáinak kijavítása többletmunkát okozhat a fejlesztõnknek, ahhoz képest, mintha már az elõzõ munkafolyamatoknál fény derült volna ezekre.
+Lehetséges, hogy célszerû lenne a tesztelõk bekapcsolódása a projektbe már a tervezés során.
+Még ha a fejlesztõ csapat határidõre el is készül a munkával, a tesztelés során felszínre került hibák – esetlegesen több körös javítása is több idõt vehet igénybe a tervezettnél, nem is beszélve arról, ha a fejlesztõk már csúszással készítik el a szoftvert.
+
+
+2. Fõszereplõk az egyes fázisokban
+
+1. Requirement analysis – Követelmények feltárása és dokumentálása
+Megrendelõ
+IT üzleti elemzõ, követelmény mérnök
+Projektmenedzser	
+
+2. Design - Tervezés 
+Fejlesztõ
+Tervezõmérnök, architekt
+GUI, frontend specialista
+
+3. Implementation – Implementálás
+Fejlesztõ
+GUI, frontend specialista
+
+4. Testing – Tesztelés
+Szoftvertesztelõ
+Tesztautomatizáló mérnök
+Tesztkoordinátor
+Tesztmenedzser
+
+5. Deployment, Release – Átadás
+Megrendelõ
+Kulcsfelhasználó
+Üzemeltetõ, rendszergazda
+
+
+6. Maintenance, Evolution – Karbantartás, továbbfejlesztés
+Projektmenedzser
+Fejlesztõ
+Megrendelõ
+Felhasználó
+Kulcsfelhasználó
+Üzemeltetõ, rendszergazda
+
+
+A megrendelõ és a fejlesztõi csapat között a követelmények felmérésében, összehangolásában – itt nagy segítség az IT tervezõ, követelménymérnök közremûködése.
+
+Ellentétek lehetnek a fejlesztõi és tesztelõ csapat között. A fejlesztõk a tesztelõk által feltárt hibákat nem akarják elfogadni, javítani, támadásként élik meg.
+
+A projektmenedzser és a fejlesztõk, tesztelõk között az idõkeretért való „küzdelem”.
+
+A közös cél mindenképpen egy jó minõségû termék létrehozása.
+
+A sikeres projekt a határidõre elkészített megfelelõen mûködõ szoftver.
+
+
+
+
+
+
+
+
+
+3. Együttmûködés a többi szereplõvel 
+Tesztmenedzser, tesztkoordinátor, egyéb tesztelõk, fejlesztõ, GUI, frontend specialista, IT elemzõ, követelménymérnök, felhasználók
+4. Ellentmondás feloldása
+Ki segíthet eldönteni a vitás kérdéseket? 
+A tesztmenedzser, a teszt koordinátor, a projekt menedzser
+5. A tesztelõk terhelése
+6. Mi történik, mikor hibát találunk?
+A tesztelõt büszkeséggel tölti el, ha hibát talál, a fejlesztõ úgy érezheti, hogy nem jól végezte munkáját, ezért lehet, hogy megkérdõjelezi a hibát. A projektmenedzser esetében attól függhet, hogy mikor fedi fel a hibát a tesztelõ, ha átadás elõtt röviddel, akkor kérdésessé válhat az idõben való átadás, ezért ez frusztrációt okozhat, ha még van idõ a megfelelõ korrekcióra, akkor örömmel töltheti el, hogy egy jobb minõségû munka kerül ki a kezük közül. 
+A megrendelõben bizalmatlanságot szülhet, ha a tesztelõk és fejlesztõk „vitája” elõtte zajlik, de ha megnyugtatóan elmondja egy szakember, hogy milyen hibát találtak, és azt hogyan sikerült kiküszöbölni, akkor a megrendelõ is örül, s lehet, hogy még némi határidõ csúszást is elvisel annak érdekében, hogy tökéletesen mûködõ szoftvert kapjon.
+7. Probléma kommunikálása
+II.
+1. A felület megjelenése vidám, de egyszerû legyen.
+Az online calculator-nak minden böngészõ esetében tökéletesen kell mûködnie.
+A felületnek átláthatónak és könnyen kezelhetõnek kell lennie.
+Az különbözõ alkalmazások közötti váltás gyors legyen.
+A különbözõ kalkulátorok és konverterek mûködése gyors legyen
+
+2. Az éttermeket a térképen szembetûnõ jelöléssel kell feltüntetni.
+Az étteremlistában minimum 10 étterem szerepeljen egy képernyõn.
+Az éttermek leírásából csak az elsõ rész jelenjen meg a listában, a jobb áttekinthetõség végett.
+Az étterem értékeléseinek átlaga jelenjen meg az étterem neve mellett piros vagy narancssárga színnel.
+A bejelentkezett felhasználók saját értékeléseiket az elsõ oldalon láthassák.
+
+3. Magas színtû követelmények:
+
+- Felsõoktatási intézmények listájával találkozzon a felhasználó, az oldalra való navigálást követõen.
+- A home page-en legyen elérhetõ egy regisztrációs és egy bejelentkezés felület.
+- A bejelentkezett felhasználók (hallgatók) értékeléseket adhatnak le a felületen különbözõ felsõoktatási intézményekre.
+- A leadott értékelésekbõl listákat tudjanak elérni a felhasználók a felsõoktatási intézmények szûrése és rendezése alapján.
+- a felület legyen a hallgatók számára átlátható és könnyen kezelhetõ.
+
+      Alacsonyabb szintû követelmények
+- A regisztrációs ablakban a felhasználóknak meg kell adniuk egy választott felhasználónevet, életkorukat, azt, hogy melyik oktatási intézmény hallgatói, vagy hallgatói voltak – itt több válasz is legyen lehetséges -, és egy jelszót. Prioritás: 1
+-  A felhasználónév maximum 10 karakter legyen. Prioritás:4
+- A jelszó minimum 6, maximum 10 karakter legyen, kis és nagybetûket és számokat tartalmazhat, egyéb karaktereket nem. Prioritás :4
+- A bejelentkezési felületen az emailcím és a jelszó megadásával tudjanak a felhasználók bejelentkezni, legyen egy elfelejtett jelszó lehetõség, ami az emailcímre küld egy percen belül új jelszót. Prioritás:1
+- A felhasználók által leadott értékelések legyenek 1-tõl 5-ig pontszámokból választhatóak. Prioritás: 1
+- A felhasználóknak legyen lehetõségük szöveges értékelésre is, ennek hossza maximum 200  karakter legyen. Prioritás :1
+- A felhasználók a leadott értékeléseiket tudják késõbb módosítani vagy törölni. Prioritás: 4
+
+- Az intézmények neve mellett jelenjen meg a pontszámos értékelés átlaga. Prioritás: 1
+- Az intézmények között legyen lehetõség szûrni a megyék szerint, várisok szerint, értékelések száma, értékelések átlaga szerint, kategóriák szerint. Prioritás: 1
+- A szûrések eredményét lehessen rendezni csökkenõ – növekvõ sorrendben, illetve abc sorrendben. Prioritás: 2
+- A szûrések során megjelenõ intézmények mellett látszon a pontszámos értékelés átlaga, az értékelések száma, a város, a megye. Prioritás:2
+-  A szöveges értékelések csak külön kattintással legyenek elérhetõk, a könnyebb áttekinthetõség miatt. Prioritás: 3
+- Készüljön egy térképes megjelenítés is az oktatási intézményekrõl. Prioritás: 4
+- A térképen is jelenjenek meg a szûrések eredményei. Prioritás:5
+
+- A felsõoktatási intézményeket az adminisztrátorok bõvíthetik, õk adják meg az intézményre vonatkozó kategóriákat. Prioritás: 3
+
+- A felület alapszínei elsõsorban a kék és az szürke árnyalatai legyenek. Prioritás: 2
+
+
+
+6.	Tesztelhetõ követelmények
+	Az éttermek listája jelenjen meg kattintás után 1 mp-en belül.
+Az étterem keresõ felületnek könnyen használhatónak kell lennie gyakorlatlan felhasználók számára is.
+Az étterem keresõnek mûködnie kell Windows és Linux operációs rendszeren is.
+A felhasználók értékeléseinek megjelenése 1 másodpercen belül kell történjen.
+A felület legyen modern, jól áttekinthetõ, elsõsorban szürke és narancs árnyalatait használva.
+Az étteremtulajdonosok jelszavait titkosítottan kell tárolni.
+Az éttermek elhelyezését google map alkalmazásra kell biztosítani.
+A GPS pozíció meghatározását és térképre helyezését 1 méteres pontossággal kell meghatározni.
+
+III:
+1. Autó
+- Tágas, kényelmes, állítható üléstávolságokkal
+- Erõs motor (legalább 1400cm3)
+- Nem fogyaszt túl sokat (6-8l/100km)
+- Tartós alkatrészekbõl van összeszerelve
+
+Lakás
+-  Világos, de jól árnyékolható
+-  Jól szigetelt
+-  Tartós anyagokból készül hozzáértõ szakemberek által
+-  Jó a kialakítása, nincs használhatatlan tér
+-  Esztétikus külsõ és belsõ megjelenésében is, de ez nem megy a funkcionalitás rovására.
+ 
+2. Szoftver minõség
+Gyakorlatlan felhasználó számára is könnyen kezelhetõ
+Nem használ felesleges erõforrásokat, nem fagy le
+
+
+
+Jó minõségû szoftverek:
+
+OTP direkt 
+You Tube 
+Discord
+Microsoft Office
+G-mail
+Facebook
+nkmenergia.hu
+
+
+Rossz minõségû szoftverek:
+Skype – nagyon sok erõforrást használ
+Kulcs-Soft számlázóprogram – lassú, könnyen lefagy
+Ügyfélkapu - nehezen átlátható, kezelhetõ
+tarhely.gov – nagyon nehezen kezelhetõ
+
+3. Minõség kategóriák
+
+1. Teljesítményhatékonyság
+2. Funkcionalitás
+3. 	Biztonság
+4.	Funkcionalitás
+5.	Megbízhatóság
+6.      Kompatibilitás
+
+7.	Funkcionalitás
+8.	Hordozhatóság
+9.    Biztonság
+
+
+
+
+4.		
+	Funkcionális alkalmasság (Functional Suitability)
+Jól átlátható választás az árucikkek között
+Könnyen átlátható a vásárlás menete, ezt segíti is egy külön menüpont.
+Teljesítményhatékonyság (Performance Efficiency)
+Gyors válaszidõk a termékek kiválasztásánál
+Gyors a navigálás a különbözõ menü pontok között
+Nem terheli le túlzottan a rendszert
+
+	Kompatibilitás (Compatibility)
+Az általánosan használt browserekkel kompatibilis. 
+Mûködik a legtöbb operációs rendszeren.
+
+	Használhatóság (Usabiliy)
+Regisztrációt megkönnyíti a legördülõ menübõl való választás a települések, az utcák, még a házszámok esetében is.
+A Kedvencek fül alatt a korábban már megvásárolt termékek elérhetõk, és újra kiválaszthatók.
+
+	Megbízhatóság (Reliability)
+
+	Biztonság (Security)
+Regisztrációnál titkosítottan kerülnek tárolásra az adatok.
+A fizetés menete 
+
+	Karbantarthatóság (Maintability)
+
+	Hordozhatóság (Portability)
